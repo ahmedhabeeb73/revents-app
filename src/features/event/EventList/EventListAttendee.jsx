@@ -3,9 +3,10 @@ import { List, Image } from 'semantic-ui-react'
 
  class EventListAttendee extends Component {
   render() {
+    const {attend}=this.props;
     return (
       <List.Item>
-        <Image as="a" size="mini" circular src="https://source.unsplash.com/600x400/?nature"/>
+        <Image as="a" size="mini" circular src={attend.photoURL}/>
       </List.Item>
     )
   }
